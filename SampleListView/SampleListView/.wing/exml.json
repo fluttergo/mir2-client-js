@@ -1,0 +1,25 @@
+{
+  "1645e410327": {
+    "path": "..\\resource\\euix\\ListView.ts",
+    "class": "ListView",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "1645ea9b476": {
+    "path": "..\\resource\\euix\\Main.ts",
+    "class": "Main",
+    "parentPath": ""
+  },
+  "1645eaa451b": {
+    "path": "..\\resource\\scene\\Login.ts",
+    "class": "Login",
+    "parentPath": ""
+  },
+  "1645f0d542b": {
+    "path": "..\\resource\\euix\\ListViewImageItem.ts",
+    "class": "ListViewImageItem",
+    "parentPath": ""
+  }
+}

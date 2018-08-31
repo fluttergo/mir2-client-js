@@ -1,0 +1,26 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/matchvs/matchvs.js",
+		"libs/modules/mta/mta.js"
+	],
+	"game": [
+		"bin-debug/Main.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/Const.js",
+		"bin-debug/GameData.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Chart.js",
+		"bin-debug/MvsManager.js",
+		"bin-debug/NewWorkUtil.js",
+		"bin-debug/Platform.js",
+		"bin-debug/Setting.js",
+		"bin-debug/ThemeAdapter.js"
+	]
+}

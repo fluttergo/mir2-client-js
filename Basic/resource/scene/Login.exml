@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.AnimationSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
+	<e:Image width="1918" height="602.4" anchorOffsetX="0" anchorOffsetY="0" x="0" y="477.6" source="100"/>
+
+	<e:Button id="n1" label="" x="688.67" y="624.79" width="64" height="64">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="resource/Items.wil/404.png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+	<e:Button id="n2" label="" x="789.73" y="620.97" width="64" height="64" anchorOffsetX="0" anchorOffsetY="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="resource/Items.wil/402.png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+
+	<e:Image id="n3" width="64" height="64" x="900.33" y="621.83" anchorOffsetX="0" anchorOffsetY="0" source="resource/Items.wil/28.png"/>
+	<e:Label id="xy" text="333,333" x="23" y="974.52" anchorOffsetX="0" width="113.39" anchorOffsetY="0" height="37.58" textAlign="center" verticalAlign="middle" textColor="0xffffff"/>
+	<e:Image id="weather" width="72.8" height="129.6" x="1795" y="666" anchorOffsetX="0" anchorOffsetY="0" source="resource/Prguse.wil/13.png"/>
+	<e:Image id="levelprogress" width="175.8" height="23.6" x="1597" y="908.72" anchorOffsetX="0" anchorOffsetY="0" source="resource/Prguse.wil/7.png"/>
+	<e:Image id="levelprogress0" width="220.8" x="94.89" y="694.12" anchorOffsetX="0" anchorOffsetY="0" source="resource/Prguse.wil/4.png" height="230.4"/>
+	<e:Group width="200" height="200" x="733" y="203">
+		<e:Rect id="player" width="92.73" height="86.67" x="56.73" y="56.66" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xb51515"/>
+	</e:Group>
+</e:Skin>

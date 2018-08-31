@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*">
+	<w:Config id="1631fb6b00e"></w:Config>
+
+	<e:Image id="weapon" width="144" height="170.4" x="888" y="454.8" source="resource/Hum.wil/946.png" touchEnabled="true"/>
+	<e:Group id="player" width="120" height="141.6" x="788" y="334.53">
+		<e:Image width="120" height="141.6" x="0" y="0" source="resource/Weapon2.wil/15785.png" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,48 @@
+{
+	"engineVersion": "5.2.6",
+	"compilerVersion": "5.2.6",
+	"template": {},
+	"target": {
+		"current": "web"
+	},
+	"eui": {
+		"exmlRoot": [
+			"resource/eui_skins"
+		],
+		"themes": [
+			"resource/default.thm.json"
+		],
+		"exmlPublishPolicy": "commonjs"
+	},
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "promise"
+		},
+		{
+			"name": "assetsmanager"
+		},
+		{
+			"name": "dragonbones"
+		},
+		{
+			"name": "matchvs",
+			"path": "../libs/matchvs"
+		},
+		{
+			"name": "tiled",
+			"path": "../libs/tiled"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ListViewImageItem" width="286.8" height="50" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1645f0d542b"></w:Config>
+
+	<e:Group width="300" height="64" x="-1" y="-5" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Rect width="296.05" height="62.95" x="3.95" y="0" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.8" scaleX="1" scaleY="1" fillColor="0x721010" strokeColor="0x57c10b"/>
+		<e:Image width="30" height="30" x="17" y="20" source="egret_icon_png" scaleX="1" scaleY="1"/>
+		<e:Label id="labelDisplay" x="64.4" y="17" text="{data.label}" borderColor="0x0f0000" backgroundColor="0x9b3f3f" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

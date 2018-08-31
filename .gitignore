@@ -1,0 +1,14 @@
+Basic/.idea/
+Basic/bin-debug/
+Basic/.wing/
+networkping/bin-debug/
+networkping/bin-release/
+networkping/.wing/
+
+Basic/libs/
+networkping/libs/modules/
+networkping/libs/
+Basic/bin-release/
+glmir/
+Basic_wxgame/
+libs/
