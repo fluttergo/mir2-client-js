@@ -1,14 +1,8 @@
-Basic/.idea/
+Basic/libs/
 Basic/bin-debug/
 Basic/.wing/
+SampleListView/SampleListView/libs/
 networkping/bin-debug/
 networkping/bin-release/
-networkping/.wing/
-
-Basic/libs/
-networkping/libs/modules/
 networkping/libs/
-Basic/bin-release/
-glmir/
-Basic_wxgame/
-libs/
+networkping/.wing/
