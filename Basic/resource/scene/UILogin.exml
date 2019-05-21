@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UILoginSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16ad84d5bba"></w:Config>
+	<e:Group id="g_account_password" width="800" height="600" x="0" y="0">
+		<e:Image source="" x="0" y="0" width="100%" height="100%"/>
+		<e:Image id="i_account_password" source="login_json.login_60" verticalCenter="0" horizontalCenter="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="g_password_modify" width="0" height="0" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image id="i_password_modify" source="login_json.login_50" verticalCenter="0" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="g_protocol" width="0" height="0" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image id="i_protocol" source="login_json.login_1140" verticalCenter="0" horizontalCenter="0" />
+	</e:Group>
+	<e:Group id="g_reg_input" width="0" height="0" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image id="i_reg_input" source="login_json.login_63" verticalCenter="0" horizontalCenter="0" />
+	</e:Group>
+	<e:Group id="g_chrsel" width="800" height="600" x="0" y="0">
+		<e:Image id="i_chrsel" source="login_json.login_65" x="0" y="0" touchEnabled="false" locked="true"/>
+		<e:Label id="t_game_name" text="朔月传奇" size="16" fontFamily="Microsoft YaHei" bold="true" verticalAlign="middle" textAlign="center" horizontalCenter="0" top="4" locked="true"/>
+		<e:Group id="g_player_info2" width="250" height="347" x="455" y="34.88" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="login_json.login_73" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" y="4"/>
+			<e:EditableText id="et_player_name2" width="107.33" height="12.17" text="头号玩家2" x="62.33" y="93.33" anchorOffsetY="0" anchorOffsetX="0" size="10" textColor="0x666666" fontFamily="Microsoft YaHei" textAlign="center" bold="true" stroke="1" strokeColor="0xfcfcfc"/>
+		</e:Group>
+		<e:Group id="g_player_info1" width="250" height="347" x="103" y="39.88" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="login_json.login_73" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" y="0"/>
+			<e:EditableText id="et_player_name1" width="107.33" height="12.17" text="头号玩家1" x="62.33" y="89.33" anchorOffsetY="0" anchorOffsetX="0" size="10" textColor="0x666666" fontFamily="Microsoft YaHei" textAlign="center" bold="true" stroke="1" strokeColor="0xFCFCFC"/>
+		</e:Group>
+		<e:Image id="b_login" source="login_json.login_68" x="387.5" y="455"/>
+	</e:Group>
+</e:Skin>

@@ -107,8 +107,6 @@ class Main extends egret.DisplayObjectContainer {
         RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
 
         // RES.createGroup("initLoad", ["preload", "bgPic", "animation", "sound"]);
-        RES.loadGroup("mirui");
-        RES.loadGroup("map");
         RES.loadGroup("preload");
         console.log("start Download Resource");
     }
@@ -179,6 +177,7 @@ class Main extends egret.DisplayObjectContainer {
     protected createGameScene(): void {
 
         // this.createBackGround();
+        SceneManager.showScene(UILogin);
 
     }
 

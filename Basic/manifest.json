@@ -34,6 +34,7 @@
 		"bin-debug/scene/ListViewImageItem.js",
 		"bin-debug/scene/Lobby.js",
 		"bin-debug/scene/Login.js",
+		"bin-debug/scene/UILogin.js",
 		"bin-debug/starlingswf/StarlingSwfSheetAnalyzer.js",
 		"bin-debug/starlingswf/Swf.js",
 		"bin-debug/starlingswf/SwfAnimationInfo.js",
