@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="skins.AnimationSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
-        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" xmlns:ns1="*">
-	<e:Group width="200" height="200" x="733" y="203">
-		<e:Rect id="player" width="92.73" height="86.67" x="56.73" y="56.66" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xb51515"/>
-	</e:Group>
-</e:Skin>

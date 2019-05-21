@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="UILoginSkin" width="800" height="600" xmlns:e="http://ns.egret.com/eui"
-        xmlns:w="http://ns.egret.com/wing">
+        xmlns:w="http://ns.egret.com/wing"  >
 	<w:Config id="16ad84d5bba"></w:Config>
 	<e:Group id="g_account_password" width="800" height="600" x="0" y="0">
-		<e:Image source="" x="0" y="0" width="100%" height="100%"/>
+		<e:Image id="i_bg" x="0" y="0" width="100%" height="100%" source="bg_jpg" blendMode="add"/>
 		<e:Image id="i_account_password" source="login_json.login_60" verticalCenter="0" horizontalCenter="0" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Button id="b_sumbit" label="" x="420.66" y="334" anchorOffsetX="0" width="79" anchorOffsetY="0" height="37.34">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_62"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="b_reg" label="" x="273.66" y="377" anchorOffsetX="0" width="103" anchorOffsetY="0" height="35.67">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_61"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" x="379.33" y="377" anchorOffsetX="0" width="132" anchorOffsetY="0" height="35" id="b_reg0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_53"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:EditableText id="et_account" width="136" height="15.34" text="" x="351.33" y="258.33" size="16" textColor="0xb7b7b7" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" textAlign="left"/>
+		<e:EditableText id="et_password" width="136" height="15.34" text="" x="350.66" y="289.66" size="16" textColor="0xB7B7B7" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle" textAlign="left"/>
+		<e:Image id="i_fg" source="fg_png" horizontalCenter="-181" verticalCenter="-151" width="318" height="298"/>
+		<e:CheckBox id="c_sound" label="" x="750.33" y="11.67" enabled="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="sound_on_png" source.down="sound_off_png" source.disabled="sound_off_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
 		<e:layout>
 		<e:BasicLayout/>
 		</e:layout>
+	</e:Group>
+	<e:Group id="g_door" width="800" height="600" x="0" y="0" visible="false">
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+		<e:Image source="ChrSel_door_bg_png" x="0" y="0"/>
+		<e:Group id="g_door_open" width="496" height="362" x="152" y="119"/>
 	</e:Group>
 	<e:Group id="g_password_modify" width="0" height="0" verticalCenter="0" horizontalCenter="0" visible="false">
 		<e:Image id="i_password_modify" source="login_json.login_50" verticalCenter="0" horizontalCenter="0"/>
@@ -15,20 +57,88 @@
 	<e:Group id="g_protocol" width="0" height="0" verticalCenter="0" horizontalCenter="0" visible="false">
 		<e:Image id="i_protocol" source="login_json.login_1140" verticalCenter="0" horizontalCenter="0" />
 	</e:Group>
-	<e:Group id="g_reg_input" width="0" height="0" verticalCenter="0" horizontalCenter="0" visible="false">
-		<e:Image id="i_reg_input" source="login_json.login_63" verticalCenter="0" horizontalCenter="0" />
+	<e:Group id="g_reg_input" width="100%" height="100%" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image id="i_reg_input" source="login_json.login_63" verticalCenter="0" horizontalCenter="0" locked="true"/>
+		<e:Button id="b_reg_cancel" label="" x="525" y="478" anchorOffsetX="0" width="102.34" anchorOffsetY="0" height="37">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_52"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="b_reg_sumbit" label="" x="235" y="478" anchorOffsetX="0" width="79.67" anchorOffsetY="0" height="35.67">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_62"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
 	</e:Group>
 	<e:Group id="g_chrsel" width="800" height="600" x="0" y="0">
 		<e:Image id="i_chrsel" source="login_json.login_65" x="0" y="0" touchEnabled="false" locked="true"/>
-		<e:Label id="t_game_name" text="朔月传奇" size="16" fontFamily="Microsoft YaHei" bold="true" verticalAlign="middle" textAlign="center" horizontalCenter="0" top="4" locked="true"/>
-		<e:Group id="g_player_info2" width="250" height="347" x="455" y="34.88" anchorOffsetX="0" anchorOffsetY="0">
-			<e:Image source="login_json.login_73" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" y="4"/>
-			<e:EditableText id="et_player_name2" width="107.33" height="12.17" text="头号玩家2" x="62.33" y="93.33" anchorOffsetY="0" anchorOffsetX="0" size="10" textColor="0x666666" fontFamily="Microsoft YaHei" textAlign="center" bold="true" stroke="1" strokeColor="0xfcfcfc"/>
-		</e:Group>
-		<e:Group id="g_player_info1" width="250" height="347" x="103" y="39.88" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Label id="t_game_name" text="朔月传奇" size="16" fontFamily="Microsoft YaHei" bold="true" verticalAlign="middle" textAlign="center" horizontalCenter="0" top="4"/>
+		<e:Group id="g_player_info" width="250" height="347" x="103" y="39.88" anchorOffsetX="0" anchorOffsetY="0">
 			<e:Image source="login_json.login_73" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" y="0"/>
-			<e:EditableText id="et_player_name1" width="107.33" height="12.17" text="头号玩家1" x="62.33" y="89.33" anchorOffsetY="0" anchorOffsetX="0" size="10" textColor="0x666666" fontFamily="Microsoft YaHei" textAlign="center" bold="true" stroke="1" strokeColor="0xFCFCFC"/>
+			<e:EditableText id="et_player_name" width="107.33" height="12.17" text="头号玩家1" x="62.33" y="89.33" anchorOffsetY="0" anchorOffsetX="0" size="10" textColor="0x666666" fontFamily="Microsoft YaHei" textAlign="center" bold="true" stroke="1" strokeColor="0xFCFCFC"/>
+			<e:Button id="b_player_warrior" label="" x="36.2" y="127.4" width="44" height="36">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_74"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="b_player_wizard" label="" x="73.4" y="127.4" anchorOffsetX="0" width="44" anchorOffsetY="0" height="36">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_74"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="b_player_taoist" label="" x="111.8" y="127.4" width="44" height="36">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_76"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="b_player_woman" label="" x="73.4" y="188.2" height="36" width="44">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_77"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="b_player_man" label="" x="111" y="189" height="36" width="44">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_78"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="b_player_sumbit" label="" x="85.16" y="297.5" anchorOffsetX="0" width="63.5" anchorOffsetY="0" height="29.84">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="empty_png" source.down="login_json.login_62"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="g_player_apparence" width="250" height="347" x="455" y="34.88" anchorOffsetX="0" anchorOffsetY="0">
 		</e:Group>
 		<e:Image id="b_login" source="login_json.login_68" x="387.5" y="455"/>
+		<e:Label id="t_player_name1" text="unname" x="115" y="492.5" anchorOffsetX="0" width="91.5" anchorOffsetY="0" height="13" size="12" fontFamily="Microsoft YaHei" textColor="0x998f8f"/>
+		<e:Label id="t_player_job1" text="武士" x="115" y="552.5" anchorOffsetX="0" width="91.5" anchorOffsetY="0" height="13" size="12" fontFamily="Microsoft YaHei" textColor="0x998F8F"/>
+		<e:Label id="t_player_level1" text="0" x="115" y="524" anchorOffsetX="0" width="91.5" anchorOffsetY="0" height="13" size="12" fontFamily="Microsoft YaHei" textColor="0x998F8F"/>
+		<e:Label text="unname" x="668" y="492.83" anchorOffsetX="0" width="91.5" anchorOffsetY="0" height="13" size="12" fontFamily="Microsoft YaHei" textColor="0x998F8F" id="t_player_name0"/>
+		<e:Label text="道士" x="668" y="552.83" anchorOffsetX="0" width="91.5" anchorOffsetY="0" height="13" size="12" fontFamily="Microsoft YaHei" textColor="0x998F8F" id="t_player_job0"/>
+		<e:Label text="0" x="668" y="524" anchorOffsetX="0" width="91.5" anchorOffsetY="0" height="13" size="12" fontFamily="Microsoft YaHei" textColor="0x998F8F" id="t_player_level0"/>
 	</e:Group>
 </e:Skin>

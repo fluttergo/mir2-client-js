@@ -101,7 +101,7 @@ class TileMap {
 			for (var j = 0; j < renderImageArr[i].length; j++) {
 				var image: TileImage = renderImageArr[i][j];
 				if (image) {
-					ImageLoader.showAsyncByUrl(mapLayer, "http://118.24.53.22:11111/" + image.source, (i * 48) - image.width + 48, (j * 32) - image.height + 32, image.width, image.height);
+					ImageLoader.showAsyncByCrossUrl(mapLayer, "http://118.24.53.22:11111/" + image.source, (i * 48) - image.width + 48, (j * 32) - image.height + 32, image.width, image.height);
 				}
 			}
 		}

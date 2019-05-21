@@ -159,7 +159,6 @@ class Main extends egret.DisplayObjectContainer {
 
         SceneManager.init(rootView);
 
-        NetWorkUtil.instance.addEventListener(this);
 
         this.createGameScene();
     }
@@ -176,7 +175,6 @@ class Main extends egret.DisplayObjectContainer {
      */
     protected createGameScene(): void {
 
-        // this.createBackGround();
         SceneManager.showScene(UILogin);
 
     }
@@ -210,7 +208,6 @@ class Main extends egret.DisplayObjectContainer {
         gameLayer.addChild(this.mapLayer);
         this.addChild(gameLayer);
         this.gameLayer = gameLayer;
-        this.addChild(new Login());
 
 
         // var img = RES.getRes("ChrSel.wil_json.100");

@@ -13,13 +13,7 @@
 		"eui.VScrollBar": "resource/eui_skins/VScrollBarSkin.exml",
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
-		"Login": "resource/scene/Login.exml",
 		"Game": "resource/scene/Game.exml",
-		"ImageButton": "resource/eui_skins/ImageButton.exml",
-		"Lobby": "resource/scene/Lobby.exml",
-		"Enemy": "resource/scene/Enemy.exml",
-		"GameOver": "resource/scene/GameOver.exml",
-		"ListViewImageItem": "resource/scene/ListViewImageItem.exml",
 		"UILogin": "resource/scene/UILogin.exml"
 	},
 	"autoGenerateExmlsList": true,
@@ -40,12 +34,7 @@
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
-		"resource/scene/Enemy.exml",
 		"resource/scene/Game.exml",
-		"resource/scene/GameOver.exml",
-		"resource/scene/ListViewImageItem.exml",
-		"resource/scene/Lobby.exml",
-		"resource/scene/Login.exml",
 		"resource/scene/UILogin.exml"
 	],
 	"path": "resource/default.thm.json"

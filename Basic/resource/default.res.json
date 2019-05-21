@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,toast-bg_png,timefont_json,loadingprogress_png,hum_boy_json,hum_boy_png,joystick1_png,joystick2_png,joystick3_png,joystick4_png,ChrSel_door_mc_json,ChrSel_door_tex_png,ChrSel_rise_mc_json,ChrSel_rise_tex_png,ChrSel_Taoist_mc_json,ChrSel_Taoist_rise_mc_json,ChrSel_Taoist_rise_tex_png,ChrSel_Taoist_rise_women_mc_json,ChrSel_Taoist_rise_women_tex_png,ChrSel_Taoist_tex_png,ChrSel_Taoist_women_mc_json,ChrSel_Taoist_women_tex_png,ChrSel_warrior_mc_json,ChrSel_warrior_rise_mc_json,ChrSel_warrior_rise_tex_png,ChrSel_warrior_rise_women_mc_json,ChrSel_warrior_rise_women_tex_png,ChrSel_warrior_tex_png,ChrSel_warrior_woman_mc_json,ChrSel_warrior_woman_tex_png,ChrSel_wizard_mc_json,ChrSel_wizard_rise_mc_json,ChrSel_wizard_rise_tex_png,ChrSel_wizard_rise_women_mc_json,ChrSel_wizard_rise_women_tex_png,ChrSel_wizard_tex_png,ChrSel_wizard_women_mc_json,ChrSel_wizard_women_tex_png,login_json,sellect-loop2_wav,powerup_wav,M11-2_wav,M7-1_wav,M2-1_wav,Log-in-long2_wav,HeroLogout_wav,HeroLogin_wav,Field2_wav,OpenDoor_wav,OpenBox_wav,bg_jpg,fp_jpg",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,toast-bg_png,timefont_json,loadingprogress_png,hum_boy_json,hum_boy_png,joystick1_png,joystick2_png,joystick3_png,joystick4_png,ChrSel_door_mc_json,ChrSel_door_tex_png,ChrSel_rise_mc_json,ChrSel_rise_tex_png,ChrSel_Taoist_mc_json,ChrSel_Taoist_rise_mc_json,ChrSel_Taoist_rise_tex_png,ChrSel_Taoist_rise_women_mc_json,ChrSel_Taoist_rise_women_tex_png,ChrSel_Taoist_tex_png,ChrSel_Taoist_women_mc_json,ChrSel_Taoist_women_tex_png,ChrSel_warrior_mc_json,ChrSel_warrior_rise_mc_json,ChrSel_warrior_rise_tex_png,ChrSel_warrior_rise_women_mc_json,ChrSel_warrior_rise_women_tex_png,ChrSel_warrior_tex_png,ChrSel_warrior_woman_mc_json,ChrSel_warrior_woman_tex_png,ChrSel_wizard_mc_json,ChrSel_wizard_rise_mc_json,ChrSel_wizard_rise_tex_png,ChrSel_wizard_rise_women_mc_json,ChrSel_wizard_rise_women_tex_png,ChrSel_wizard_tex_png,ChrSel_wizard_women_mc_json,ChrSel_wizard_women_tex_png,login_json,sellect-loop2_wav,powerup_wav,M11-2_wav,M7-1_wav,M2-1_wav,Log-in-long2_wav,HeroLogout_wav,HeroLogin_wav,Field2_wav,OpenDoor_wav,OpenBox_wav,bg_jpg,empty_png,fg_png,ChrSel_door_mc2_json,ChrSel_door_tex2_png,ChrSel_door_bg_png,icon_music_on_png,sound_off_png,sound_on_png",
 			"name": "preload"
 		},
 		{
@@ -383,9 +383,44 @@
 			"name": "bg_jpg"
 		},
 		{
-			"url": "mir2/ui/fp.jpg",
+			"name": "empty_png",
 			"type": "image",
-			"name": "fp_jpg"
+			"url": "mir2/empty.png"
+		},
+		{
+			"name": "fg_png",
+			"type": "image",
+			"url": "mir2/ui/fg.png"
+		},
+		{
+			"name": "ChrSel_door_mc2_json",
+			"type": "json",
+			"url": "mir2/ChrSel/ChrSel_door_mc.json"
+		},
+		{
+			"name": "ChrSel_door_tex2_png",
+			"type": "image",
+			"url": "mir2/ChrSel/ChrSel_door_tex.png"
+		},
+		{
+			"name": "ChrSel_door_bg_png",
+			"type": "image",
+			"url": "mir2/ui/ChrSel/ChrSel_door_bg.png"
+		},
+		{
+			"name": "icon_music_on_png",
+			"type": "image",
+			"url": "mir2/ui/icon_music_on.png"
+		},
+		{
+			"name": "sound_off_png",
+			"type": "image",
+			"url": "mir2/ui/sound_off.png"
+		},
+		{
+			"name": "sound_on_png",
+			"type": "image",
+			"url": "mir2/ui/sound_on.png"
 		}
 	]
 }

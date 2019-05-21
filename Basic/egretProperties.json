@@ -37,8 +37,8 @@
 			"name": "dragonbones"
 		},
 		{
-			"name": "matchvs",
-			"path": "../libs/matchvs"
+			"name": "umsp",
+			"path": "../libs/umsp"
 		},
 		{
 			"name": "tiled",

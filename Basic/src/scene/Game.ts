@@ -1,55 +1,64 @@
 class Game extends BaseScene implements eui.UIComponent {
-	public player: egret.MovieClip;
+	private that: any = this;
+	private loading: Loading;
+	private xy: eui.Label;
+
+	private vj: VirtualJoystick = new VirtualJoystick();  //虚拟摇杆
+
+
+	private player: egret.DisplayObject;    //人物
+	private speedX = 0;         //人物移动速度
+	private speedY = 0;
+	private speed = 10;
+
+
 	public constructor() {
 		super();
 	}
-	protected partAdded(partName: string, instance: any): void {
-		super.partAdded(partName, instance);
-	}
+	public menuAnimation: egret.tween.TweenGroup;
 
-	protected onCreated(): void {
+	public onCreated() {
 		super.onCreated();
-		console.log("================onCreated==============");
-		var data = RES.getRes("hum_boy_json");
-		var txtr = RES.getRes("hum_boy_png");
-		var mcFactory: egret.MovieClipDataFactory = new egret.MovieClipDataFactory(data, txtr);
-		var mc1: egret.MovieClip = new egret.MovieClip(mcFactory.generateMovieClipData("boy"));
-		this.addChild(mc1);
-		this.player = mc1;
+		this.loading = Loading.create(this);
+		this.addChild(this.vj);
+		this.vj.addEventListener("vj_start", this.onStart, this);
+		this.vj.addEventListener("vj_move", this.onChange, this);
+		this.vj.addEventListener("vj_end", this.onEnd, this);
 	}
 
-	private lastArrow = VirtualJoystick.Arrow.UP;
-	
-	public moveByArrow(arrow) {
-		// console.log('[INFO] arrow to ' + arrow);
-		if(this.lastArrow==arrow){
-			return;
-		}
-		this.lastArrow = arrow
-		try {
-			this.player.gotoAndPlay("run_" + VirtualJoystick.Arrow[arrow], -1);
-		} catch (e) {
-			console.warn('[WARN] moveByArrow err:' + e.message);
-		}
-	}
 
 	public onClick(name: string, v: egret.DisplayObject) {
-		let stack: any;
-		switch (name) {
-			case "run":
+		if (name == "n1") {
+			var xy = (<Main>this.parent).randomMove();
 
-				break;
-			case "btnfight0":
-			case "btnfight1":
-			case "btnfight2":
-			case "btnfight3":
-			case "btnfight0bg":
-			case "btnfight1bg":
-			case "btnfight2bg":
-			case "btnfight3bg":
-
+			Toast.show("随机传送到(" + xy.x + "," + xy.y + ")");
+			this.xy.text = xy.x + "," + xy.y;
+		} else if (name == "n2") {
+			var xy = (<Main>this.parent).goSafeArea();
+			this.xy.text = xy.x + "," + xy.y;
+			Toast.show("回程(" + xy.x + "," + xy.y + ")");
 		}
 		return true;
+	}	//摇杆启动，人物开始根据摇杆移动
+	private onStart() {
+		this.addEventListener(egret.Event.ENTER_FRAME, this.onEnterFrame, this);
 	}
 
+	//触摸摇杆的角度改变，人物的移动速度方向也随之改变
+	private onChange(e: egret.Event) {
+		var angle = e.data;
+		// this.speedX = Math.cos(angle) * this.speed;
+		// this.speedY = Math.sin(angle) * this.speed;
+	}
+
+	//停止摇杆，人物停止移动
+	private onEnd() {
+		this.removeEventListener(egret.Event.ENTER_FRAME, this.onEnterFrame, this);
+	}
+
+	//每帧更新，人物移动
+	private onEnterFrame() {
+		// this.player.x += this.speedX;
+		// this.player.y += this.speedY;
+	}
 }
