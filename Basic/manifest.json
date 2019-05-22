@@ -52,6 +52,7 @@
 		"bin-debug/efinal/util/JSUtil.js",
 		"bin-debug/efinal/util/UriUtil.js",
 		"bin-debug/scene/Game.js",
+		"bin-debug/scene/UIChrSel.js",
 		"bin-debug/scene/UILogin.js",
 		"bin-debug/tilemap/Tile.js",
 		"bin-debug/tilemap/TileImage.js",

@@ -18,13 +18,13 @@ class SceneManager {
     /**
      * @deprecated
      */
-    public static showScene(scene: any, par?) {
-        SceneManager.go(scene, par);
+    public static showScene(scene: any, par?,isAnima?:boolean) {
+        SceneManager.go(scene, par,isAnima&&true);
     }
     /**
      * 新建一个场景并显示,同时隐藏旧的场景
      */
-    public static go(scene: any, par?): egret.DisplayObject {
+    public static go(scene: any, par?,isAnima?:boolean): egret.DisplayObject {
         if (!this.root) { console.error("SceneManager not be init()"); return; }
         if (!scene) { console.error("scene is null"); return; }
         //hide top
@@ -32,7 +32,7 @@ class SceneManager {
             var top: BaseScene = <BaseScene>this.root.getChildAt(this.root.numChildren - 1);
             top.onHide && top.onHide();
 
-            if (SceneManager.isAnimation) {
+            if (isAnima&&SceneManager.isAnimation) {
                 var x = top.x;
                 egret.Tween.get(top, { loop: false }).to({ x: this.root.width * -1, y: 0 }, SceneManager.AnimationTime, egret.Ease.quadOut).call(function () {
                     top.x = x;
@@ -52,7 +52,7 @@ class SceneManager {
         }, this);
 
         this.root.addChild(scene);
-        if (SceneManager.isAnimation) {
+        if (isAnima&&SceneManager.isAnimation) {
             scene.x = this.root.width;
             egret.Tween.get(scene, { loop: false }).to({ x: 0, y: 0 }, SceneManager.AnimationTime, egret.Ease.circIn);
         }

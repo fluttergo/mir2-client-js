@@ -14,7 +14,8 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"Game": "resource/scene/Game.exml",
-		"UILogin": "resource/scene/UILogin.exml"
+		"UILogin": "resource/scene/UILogin.exml",
+		"UIChrSel": "resource/scene/UIChrSel.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -35,6 +36,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/scene/Game.exml",
+		"resource/scene/UIChrSel.exml",
 		"resource/scene/UILogin.exml"
 	],
 	"path": "resource/default.thm.json"

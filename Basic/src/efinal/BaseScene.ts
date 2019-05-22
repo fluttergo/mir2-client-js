@@ -105,5 +105,6 @@ class BaseScene extends eui.Component implements eui.UIComponent {
                 console.log("[BaseScene] No Handler for  click " + name);
                 break;
         }
+        Music.play("button_wav");
     }
 }

@@ -7,5 +7,4 @@ class GameData {
     static FPS: number = 5;
     static token: string = "xxx"
     static gameID: number = 0;
-    static isSound: boolean = true;
 }

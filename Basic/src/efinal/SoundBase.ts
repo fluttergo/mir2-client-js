@@ -21,7 +21,7 @@ class SoundBase extends egret.DisplayObjectContainer {
     //默认播放位置，从头开始的
     private _positon: number = 0;
     //默认不循环，设置为负数循环
-    private _loop: boolean = true;
+    private _loop: boolean = false;
     //当前状态0位空，1位播放，2位暂停, 3表示加载完成,4表示加载失败
     private _status: number = 0;
     //加载音频
@@ -71,9 +71,9 @@ class SoundBase extends egret.DisplayObjectContainer {
         this._status = 0;
         var waring: string = "播放完成";
         if (this._loop) {
-            this.dispatchEventWith(egret.Event.SOUND_COMPLETE, false, waring);
-        } else {
             this.play();
+        } else {
+            this.dispatchEventWith(egret.Event.SOUND_COMPLETE, false, waring);
         }
     }
     //获取状态

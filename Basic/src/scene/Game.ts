@@ -20,10 +20,10 @@ class Game extends BaseScene implements eui.UIComponent {
 	public onCreated() {
 		super.onCreated();
 		this.loading = Loading.create(this);
-		this.addChild(this.vj);
-		this.vj.addEventListener("vj_start", this.onStart, this);
-		this.vj.addEventListener("vj_move", this.onChange, this);
-		this.vj.addEventListener("vj_end", this.onEnd, this);
+		// this.addChild(this.vj);
+		// this.vj.addEventListener("vj_start", this.onStart, this);
+		// this.vj.addEventListener("vj_move", this.onChange, this);
+		// this.vj.addEventListener("vj_end", this.onEnd, this);
 	}
 
 
@@ -37,7 +37,10 @@ class Game extends BaseScene implements eui.UIComponent {
 			var xy = (<Main>this.parent).goSafeArea();
 			this.xy.text = xy.x + "," + xy.y;
 			Toast.show("回程(" + xy.x + "," + xy.y + ")");
+		}else{
+			SceneManager.back();
 		}
+
 		return true;
 	}	//摇杆启动，人物开始根据摇杆移动
 	private onStart() {
