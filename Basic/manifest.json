@@ -35,7 +35,7 @@
 		"bin-debug/efinal/LinkList.js",
 		"bin-debug/efinal/ListViewImageItem.js",
 		"bin-debug/efinal/ListViewUtil.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/tilemap/TileSet.js",
 		"bin-debug/Main.js",
 		"bin-debug/efinal/Music.js",
 		"bin-debug/efinal/NetStateBar.js",
@@ -58,6 +58,6 @@
 		"bin-debug/tilemap/TileImage.js",
 		"bin-debug/tilemap/TileLayer.js",
 		"bin-debug/tilemap/TileMap.js",
-		"bin-debug/tilemap/TileSet.js"
+		"bin-debug/LoadingUI.js"
 	]
 }
