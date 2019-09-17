@@ -19,8 +19,9 @@
 
 ## Demo体验
 
-WebSite: <https://fluttergo.com/PK/demo/index.html>
+在线体验: <https://fluttergo.com/PK/demo/index.html>
 
+离线体验: <https://gitee.com/geliang/WebAppLauncher>
 
 ![UI](./ScreenShot_ChrSel.gif)
 
